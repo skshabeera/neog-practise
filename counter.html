@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>total expense</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <button id="btn-addition">+</button>
+        <div id="output"></div>
+    <script>
+        let counter=0
+        function counterIncrement(){
+            counter=counter+1
+            output.innerText=counter
+
+        }
+        const element=document.querySelector("#btn-addition")
+        const output=document.querySelector("#output")
+        element.addEventListener("click",counterIncrement)
+        
+    </script>
+</body>
+</html>
